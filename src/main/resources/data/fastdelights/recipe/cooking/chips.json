@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "misc",
+  "ingredients": [
+    {
+      "item": "fastdelights:sliced_potatoes"
+    },
+    {
+      "item": "fastdelights:oil_bucket"
+    }
+  ],
+  "result": {
+    "item": "fastdelights:chips"
+  },
+  "container": {
+    "item": "fastdelights:chipholder"
+  },
+  "cookingtime": 200
+}
