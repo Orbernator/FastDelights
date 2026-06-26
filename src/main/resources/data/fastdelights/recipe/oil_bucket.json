@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " c ",
+    "cwc",
+    " c "
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:coal"
+    },
+    "w": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "fastdelights:oil_bucket"
+  }
+}

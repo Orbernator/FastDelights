@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "p p",
+    "p p",
+    "ppp"
+  ],
+  "key": {
+    "p": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "fastdelights:chipholder"
+  }
+}

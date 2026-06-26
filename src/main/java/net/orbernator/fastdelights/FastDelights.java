@@ -36,6 +36,7 @@ public class FastDelights {
         ModBlockEntities.BLOCK_ENTITIES.register(eventBus);
         ModFluids.FLUIDS.register(eventBus);
         ModFluids.FLUID_TYPES.register(eventBus);
+        ModCreativeTabs.CREATIVE_MODE_TABS.register(eventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.

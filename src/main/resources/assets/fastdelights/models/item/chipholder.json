@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "orbsmeals:item/sliced_potatoes"
+    "layer0": "fastdelights:item/chipholder"
   }
 }
