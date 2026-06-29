@@ -5,5 +5,11 @@
   "item.fastdelights.sliced_potatoes": "Sliced Potatoes",
   "item.fastdelights.oil_bucket": "Oil Bucket",
   "fluid_type.fastdelights.oil": "Oil",
-  "block.fastdelights.oil": "Oil"
+  "block.fastdelights.oil": "Oil",
+  "item.fastdelights.copper_pulverizer": "Copper Pulverizer",
+  "item.fastdelights.iron_pulverizer": "Iron Pulverizer",
+  "item.fastdelights.gold_pulverizer": "Gold Pulverizer",
+  "item.fastdelights.diamond_pulverizer": "Diamond Pulverizer",
+  "item.fastdelights.netherite_pulverizer": "Netherite Pulverizer"
+
 }

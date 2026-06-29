@@ -24,5 +24,10 @@ public class ModCreativeTabs {
         output.accept(ModItems.CHIPS.get());
         output.accept(ModItems.OIL_BUCKET.get());
         output.accept(ModItems.CHIPHOLDER.get());
+        output.accept(ModItems.COPPER_PULVERIZER.get());
+        output.accept(ModItems.IRON_PULVERIZER.get());
+        output.accept(ModItems.GOLD_PULVERIZER.get());
+        output.accept(ModItems.DIAMOND_PULVERIZER.get());
+        output.accept(ModItems.NETHERITE_PULVERIZER.get());
     }
 }

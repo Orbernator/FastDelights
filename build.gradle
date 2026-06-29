@@ -34,6 +34,10 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+    }
 }
 
 base {
@@ -125,6 +129,7 @@ configurations {
 
 dependencies {
     implementation "curse.maven:farmers-delight-398521:8083481"
+    implementation "maven.modrinth:hIu9KJTT:MbcR48Ou"
 
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
