@@ -44,6 +44,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         .build(recipeOutput, FastDelights.MODID + ":cutting/raw_chicken_patty");
 
         CuttingBoardRecipeBuilder.cuttingRecipe(
+                Ingredient.of(Items.SEA_PICKLE),
+                Ingredient.of(CommonTags.Items.TOOLS_KNIFE),
+                ModItems.SLICED_PICKLES.get(),
+                2)
+                        .build(recipeOutput, FastDelights.MODID + ":cutting/sliced_pickles");
+
+        CuttingBoardRecipeBuilder.cuttingRecipe(
+                Ingredient.of(ModItems.SLICED_POTATOES),
+                Ingredient.of(ModTags.Items.PULVERIZERS),
+                ModItems.HASHBROWN.get(),
+                1)
+                        .build(recipeOutput, FastDelights.MODID + ":cutting/hashbrown");
+
+
+        CuttingBoardRecipeBuilder.cuttingRecipe(
                 Ingredient.of(Items.MUTTON),
                 Ingredient.of(ModTags.Items.PULVERIZERS),
                 ModItems.RAW_LAMB_PATTY.get(), 2)

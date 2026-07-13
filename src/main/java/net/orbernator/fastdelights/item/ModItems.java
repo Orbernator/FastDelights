@@ -23,12 +23,12 @@ public class ModItems {
     public static final DeferredItem<Item> SLICED_POTATOES = ITEMS.register("sliced_potatoes", () -> new Item(new Item.Properties().food(ModFoods.SLICED_POTATOES)));
     public static final DeferredItem<Item> RAW_CHICKEN_PATTY = ITEMS.register("raw_chicken_patty" , () -> new Item(new Item.Properties().food(ModFoods.RAW_CHICKEN_PATTY)));
     public static final DeferredItem<Item> CHICKEN_PATTY = ITEMS.register("chicken_patty", () -> new Item(new Item.Properties().food(ModFoods.CHICKEN_PATTY)));
-    public static final DeferredItem<Item> RED_ONION = ITEMS.register("red_onion", () -> new Item(new Item.Properties().food(ModFoods.RED_ONION)));
-    public static final DeferredItem<Item> SLICED_RED_ONION = ITEMS.register("sliced_red_onion", () -> new Item(new Item.Properties().food(ModFoods.SLICED_RED_ONION)));
     public static final DeferredItem<Item> RAW_LAMB_PATTY = ITEMS.register("raw_lamb_patty", () -> new Item(new Item.Properties().food(ModFoods.RAW_LAMB_PATTY)));
     public static final DeferredItem<Item> LAMB_PATTY = ITEMS.register("lamb_patty", () -> new Item(new Item.Properties().food(ModFoods.LAMB_PATTY)));
     public static final DeferredItem<Item> CHEESE_SLICE = ITEMS.register("cheese_slice", () -> new Item(new Item.Properties().food(ModFoods.CHEESE_SLICE)));
     public static final DeferredItem<Item> BURGER_BUN = ITEMS.register("burger_bun", () -> new Item(new Item.Properties().food(ModFoods.BURGER_BUN)));
+    public static final DeferredItem<Item> SLICED_PICKLES = ITEMS.register("sliced_pickles", () -> new Item(new Item.Properties().food(ModFoods.SLICED_PICKLES)));
+    public static final DeferredItem<Item> HASHBROWN = ITEMS.register("hashbrown", () -> new Item(new Item.Properties().food(ModFoods.HASHBROWN)));
 
     // Liquids
     public static final DeferredItem<Item> OIL_BUCKET = ITEMS.register("oil_bucket",
