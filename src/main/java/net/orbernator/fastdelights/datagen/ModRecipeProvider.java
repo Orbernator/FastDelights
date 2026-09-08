@@ -4,6 +4,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.CraftingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.NeoForgeConfig;
 import net.neoforged.neoforge.common.Tags;
@@ -57,13 +58,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 1)
                         .build(recipeOutput, FastDelights.MODID + ":cutting/hashbrown");
 
-
-        CuttingBoardRecipeBuilder.cuttingRecipe(
-                Ingredient.of(Items.MUTTON),
-                Ingredient.of(ModTags.Items.PULVERIZERS),
-                ModItems.RAW_LAMB_PATTY.get(), 2)
-        .build(recipeOutput, FastDelights.MODID + ":cutting/raw_lamb_patty");
-
         
         CuttingBoardRecipeBuilder.cuttingRecipe(
                 Ingredient.of(Items.POTATO),
@@ -77,6 +71,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 Ingredient.of(CommonTags.Items.TOOLS_KNIFE),
                 ModItems.CHEESE_SLICE.get(), 2)
                 .build(recipeOutput, FastDelights.MODID + ":cutting/cheese_slice");
+
+        //Unshaped Crafting
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHIPS_WITH_TOMATO_SAUCE.get())
+                .requires(ModItems.CHIPS)
+                .requires(CommonTags.Items.FOODS_TOMATO)
+                .unlockedBy("has potato", has(ModItems.SLICED_POTATOES.get()));
 
         //Shaped Crafting
 
@@ -154,16 +155,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_raw_chicken_patty", has(ModItems.RAW_CHICKEN_PATTY.get()))
                 .save(recipeOutput, FastDelights.MODID + ":smoking/chicken_patty");
 
-        SimpleCookingRecipeBuilder.smoking(
-                Ingredient.of(ModItems.RAW_LAMB_PATTY.get()),
-                RecipeCategory.FOOD,
-                ModItems.LAMB_PATTY.get(),
-                0.25f,
-                30
-        )
-                .unlockedBy("has_raw_lamb_patty", has(ModItems.RAW_LAMB_PATTY.get()))
-                .save(recipeOutput, FastDelights.MODID + ":smoking/lamb_patty");
-
         //Furnace
         SimpleCookingRecipeBuilder.smelting(
                 Ingredient.of(ModItems.RAW_CHICKEN_PATTY.get()),
@@ -174,15 +165,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_raw_chicken_patty", has(ModItems.RAW_CHICKEN_PATTY.get()))
                 .save(recipeOutput, FastDelights.MODID + ":furnace/chicken_patty");
 
-        SimpleCookingRecipeBuilder.smelting(
-                Ingredient.of(ModItems.RAW_LAMB_PATTY.get()),
-                RecipeCategory.FOOD,
-                ModItems.LAMB_PATTY.get(),
-                0.25f,
-                60
-        )
-                .unlockedBy("has_raw_lamb_patty", has(ModItems.RAW_LAMB_PATTY.get()))
-                .save(recipeOutput, FastDelights.MODID + ":furnace/lamb_patty");
 
         //Campfire
         SimpleCookingRecipeBuilder.campfireCooking(
@@ -194,15 +176,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_raw_chicken_patty", has(ModItems.RAW_CHICKEN_PATTY.get()))
                 .save(recipeOutput, FastDelights.MODID + ":campfire/chicken_patty");
 
-        SimpleCookingRecipeBuilder.campfireCooking(
-                Ingredient.of(ModItems.RAW_LAMB_PATTY.get()),
-                RecipeCategory.FOOD,
-                ModItems.LAMB_PATTY.get(),
-                 0.25f,
-                 60
-        )
-                .unlockedBy("has_raw_lamb_patty", has(ModItems.RAW_LAMB_PATTY.get()))
-                .save(recipeOutput, FastDelights.MODID + ":campfire/lamb_patty");
+
 
     }
 }
