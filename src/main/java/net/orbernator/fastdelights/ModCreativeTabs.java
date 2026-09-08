@@ -22,6 +22,10 @@ public class ModCreativeTabs {
     public static void displayItems(CreativeModeTab.ItemDisplayParameters displayParameters, CreativeModeTab.Output output) {
         output.accept(ModItems.SLICED_POTATOES.get());
         output.accept(ModItems.CHIPS.get());
+        output.accept(ModItems.CHIPS_WITH_TOMATO_SAUCE.get());
+        output.accept(ModItems.RAW_CHICKEN_PATTY.get());
+        output.accept(ModItems.CHICKEN_PATTY.get());
+        output.accept(ModItems.SLICED_PICKLES.get());
         output.accept(ModItems.OIL_BUCKET.get());
         output.accept(ModItems.CHIPHOLDER.get());
         output.accept(ModItems.COPPER_PULVERIZER.get());

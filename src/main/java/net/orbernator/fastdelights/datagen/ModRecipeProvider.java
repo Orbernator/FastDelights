@@ -51,13 +51,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 2)
                         .build(recipeOutput, FastDelights.MODID + ":cutting/sliced_pickles");
 
-        CuttingBoardRecipeBuilder.cuttingRecipe(
-                Ingredient.of(ModItems.SLICED_POTATOES),
-                Ingredient.of(ModTags.Items.PULVERIZERS),
-                ModItems.HASHBROWN.get(),
-                1)
-                        .build(recipeOutput, FastDelights.MODID + ":cutting/hashbrown");
-
         
         CuttingBoardRecipeBuilder.cuttingRecipe(
                 Ingredient.of(Items.POTATO),
@@ -66,11 +59,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 2)
         .build(recipeOutput, FastDelights.MODID + ":cutting/sliced_potatoes");
 
-        CuttingBoardRecipeBuilder.cuttingRecipe(
-                Ingredient.of(BnCTags.Items.FOOD_CHEESE_WEDGE),
-                Ingredient.of(CommonTags.Items.TOOLS_KNIFE),
-                ModItems.CHEESE_SLICE.get(), 2)
-                .build(recipeOutput, FastDelights.MODID + ":cutting/cheese_slice");
 
         //Unshaped Crafting
 
