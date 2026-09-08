@@ -62,13 +62,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHIPS_WITH_TOMATO_SAUCE.get())
                 .requires(ModItems.CHIPS)
-                .requires(CommonTags.Items.FOODS_TOMATO)
-                .unlockedBy("has potato", has(ModItems.SLICED_POTATOES.get()));
+                .requires(vectorwing.farmersdelight.common.registry.ModItems.TOMATO_SAUCE.get())
+                .unlockedBy("has potato", has(ModItems.SLICED_POTATOES.get())).save(recipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.HOT_DOG.get())
                 .requires(ModItems.COOKED_HOT_DOG.get())
                 .requires(ModItems.BUN.get())
-                        .unlockedBy("has hot_dog", has(ModItems.RAW_HOT_DOG.get()));
+                        .unlockedBy("has hot_dog", has(ModItems.RAW_HOT_DOG.get())).save(recipeOutput);
 
         //Shaped Crafting
 
