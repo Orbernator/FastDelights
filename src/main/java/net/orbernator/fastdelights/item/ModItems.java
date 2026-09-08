@@ -25,6 +25,11 @@ public class ModItems {
     public static final DeferredItem<Item> CHICKEN_PATTY = ITEMS.register("chicken_patty", () -> new Item(new Item.Properties().food(ModFoods.CHICKEN_PATTY)));
     public static final DeferredItem<Item> SLICED_PICKLES = ITEMS.register("sliced_pickles", () -> new Item(new Item.Properties().food(ModFoods.SLICED_PICKLES)));
     public static final DeferredItem<Item> CHIPS_WITH_TOMATO_SAUCE = ITEMS.register("chips_with_tomato_sauce", () -> new Item(new Item.Properties().food(ModFoods.CHIPS_WITH_TOMATO_SAUCE)));
+    public static final DeferredItem<Item> RAW_HOT_DOG = ITEMS.register("raw_hot_dog", () -> new Item(new Item.Properties().food(ModFoods.RAW_HOT_DOG)));
+    public static final DeferredItem<Item> COOKED_HOT_DOG = ITEMS.register("cooked_hot_dog", () -> new Item(new Item.Properties().food(ModFoods.COOKED_HOT_DOG)));
+    public static final DeferredItem<Item> BUN = ITEMS.register("bun", () -> new Item(new Item.Properties().food(ModFoods.BUN)));
+    public static final DeferredItem<Item> HOT_DOG = ITEMS.register("hot_dog", () -> new Item(new Item.Properties().food(ModFoods.HOT_DOG)));
+
 
     // Liquids
     public static final DeferredItem<Item> OIL_BUCKET = ITEMS.register("oil_bucket",

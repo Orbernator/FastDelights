@@ -26,6 +26,10 @@ public class ModCreativeTabs {
         output.accept(ModItems.RAW_CHICKEN_PATTY.get());
         output.accept(ModItems.CHICKEN_PATTY.get());
         output.accept(ModItems.SLICED_PICKLES.get());
+        output.accept(ModItems.RAW_HOT_DOG.get());
+        output.accept(ModItems.COOKED_HOT_DOG.get());
+        output.accept(ModItems.BUN.get());
+        output.accept(ModItems.HOT_DOG.get());
         output.accept(ModItems.OIL_BUCKET.get());
         output.accept(ModItems.CHIPHOLDER.get());
         output.accept(ModItems.COPPER_PULVERIZER.get());
