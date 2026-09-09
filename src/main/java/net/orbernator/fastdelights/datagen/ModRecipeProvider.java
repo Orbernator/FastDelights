@@ -9,6 +9,7 @@ import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.orbernator.fastdelights.FastDelights;
 import net.orbernator.fastdelights.item.ModItems;
 import net.orbernator.fastdelights.util.ModTags;
+import umpaz.brewinandchewin.common.registry.BnCItems;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
 import vectorwing.farmersdelight.common.tag.CommonTags;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
@@ -68,7 +69,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.HOT_DOG.get())
                 .requires(ModItems.COOKED_HOT_DOG.get())
                 .requires(ModItems.BUN.get())
-                        .unlockedBy("has hot_dog", has(ModItems.RAW_HOT_DOG.get())).save(recipeOutput);
+                .unlockedBy("has hot_dog", has(ModItems.RAW_HOT_DOG.get())).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.HOT_DOG_WITH_SAUCE.get())
+                .requires(ModItems.HOT_DOG.get())
+                .requires(vectorwing.farmersdelight.common.registry.ModItems.TOMATO_SAUCE.get())
+                .unlockedBy("has hot_dog", has(ModItems.RAW_HOT_DOG.get())).save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.HOT_DOG_WITH_SAUCE_AND_CHEESE.get())
+                .requires(ModItems.HOT_DOG_WITH_SAUCE.get())
+                .requires(BnCItems.FLAXEN_CHEESE_WEDGE)
+                .unlockedBy("has hot_dog", has(ModItems.RAW_HOT_DOG.get()))
+                .save(recipeOutput);
 
         //Shaped Crafting
 
@@ -133,6 +145,27 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("   ")
                 .define('P', CommonTags.Items.FOODS_RAW_BEEF)
                 .unlockedBy("has beef", has(CommonTags.Items.FOODS_RAW_BEEF)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.CHEESEBURGER.get(), 1)
+                .pattern(" B ")
+                .pattern("ECP")
+                .pattern(" B ")
+                .define('B', ModItems.BUN.get())
+                .define('P', ModItems.SLICED_PICKLES.get())
+                .define('E', vectorwing.farmersdelight.common.registry.ModItems.BEEF_PATTY.get())
+                .define('C', BnCItems.FLAXEN_CHEESE_WEDGE)
+                .unlockedBy("has beef", has(vectorwing.farmersdelight.common.registry.ModItems.BEEF_PATTY.get()));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.CHICKEN_N_CHEESEBURGER.get(), 1)
+                .pattern(" B ")
+                .pattern("ECP")
+                .pattern(" B ")
+                .define('B', ModItems.BUN.get())
+                .define('P', ModItems.SLICED_PICKLES.get())
+                .define('E', ModItems.CHICKEN_PATTY.get())
+                .define('C', BnCItems.FLAXEN_CHEESE_WEDGE)
+                .unlockedBy("has chicken_patty", has(ModItems.CHICKEN_PATTY.get()));
+
 
         //Cooking Pot
         CookingPotRecipeBuilder.cookingPotRecipe(ModItems.CHIPS.get(), 1, NORMAL_COOKING, MEDIUM_EXP, ModItems.CHIPHOLDER)

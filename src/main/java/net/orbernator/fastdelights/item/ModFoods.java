@@ -9,8 +9,14 @@ public class ModFoods {
     public static final FoodProperties CHICKEN_PATTY = new FoodProperties.Builder().nutrition(2).saturationModifier(0.6f).build();
     public static final FoodProperties SLICED_PICKLES = new FoodProperties.Builder().nutrition(1).saturationModifier(0.3F).fast().build();
     public static final FoodProperties CHIPS_WITH_TOMATO_SAUCE = new FoodProperties.Builder().nutrition(4).saturationModifier(0.8F).build();
+    //0.2.0: The Hot Dog Update
     public static final FoodProperties RAW_HOT_DOG = new FoodProperties.Builder().nutrition(1).saturationModifier(0.1F).build();
     public static final FoodProperties COOKED_HOT_DOG = new FoodProperties.Builder().nutrition(3).saturationModifier(0.4F).build();
     public static final FoodProperties BUN = new FoodProperties.Builder().nutrition(2).saturationModifier(0.6F).build();
     public static final FoodProperties HOT_DOG = new FoodProperties.Builder().nutrition(4).saturationModifier(0.8F).build();
+    //0.3.0: The Toppings Update
+    public static final FoodProperties HOT_DOG_WITH_SAUCE = new FoodProperties.Builder().nutrition(5).saturationModifier(0.9F).build();
+    public static final FoodProperties HOT_DOG_WITH_SAUCE_AND_CHEESE = new FoodProperties.Builder().nutrition(7).saturationModifier(1.2F).build();
+    public static final FoodProperties CHEESEBURGER = new FoodProperties.Builder().nutrition(5).saturationModifier(0.8F).build();
+    public static final FoodProperties CHICKEN_N_CHEESEBURGER = new FoodProperties.Builder().nutrition(5).saturationModifier(0.8F).build();
 }
