@@ -154,7 +154,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('P', ModItems.SLICED_PICKLES.get())
                 .define('E', vectorwing.farmersdelight.common.registry.ModItems.BEEF_PATTY.get())
                 .define('C', BnCItems.FLAXEN_CHEESE_WEDGE)
-                .unlockedBy("has beef", has(vectorwing.farmersdelight.common.registry.ModItems.BEEF_PATTY.get()));
+                .unlockedBy("has beef", has(vectorwing.farmersdelight.common.registry.ModItems.BEEF_PATTY.get())).save(recipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.CHICKEN_N_CHEESEBURGER.get(), 1)
                 .pattern(" B ")
@@ -164,7 +164,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('P', ModItems.SLICED_PICKLES.get())
                 .define('E', ModItems.CHICKEN_PATTY.get())
                 .define('C', BnCItems.FLAXEN_CHEESE_WEDGE)
-                .unlockedBy("has chicken_patty", has(ModItems.CHICKEN_PATTY.get()));
+                .unlockedBy("has chicken_patty", has(ModItems.CHICKEN_PATTY.get())).save(recipeOutput);
 
 
         //Cooking Pot
