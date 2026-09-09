@@ -18,6 +18,10 @@
   "item.fastdelights.iron_pulverizer": "Iron Pulveriser",
   "item.fastdelights.gold_pulverizer": "Gold Pulveriser",
   "item.fastdelights.diamond_pulverizer": "Diamond Pulveriser",
-  "item.fastdelights.netherite_pulverizer": "Netherite Pulveriser"
+  "item.fastdelights.netherite_pulverizer": "Netherite Pulveriser",
+  "item.fastdelights.hot_dog_with_sauce": "Hot Dog with Sauce",
+  "item.fastdelights.hot_dog_with_sauce_and_cheese": "Hot Dog with Sauce and Cheese",
+  "item.fastdelights.cheeseburger": "Cheeseburger",
+  "item.fastdelights.chicken_n_cheeseburger": "Chicken N Cheeseburger"
 
 }
