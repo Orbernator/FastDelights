@@ -19,4 +19,9 @@ public class ModFoods {
     public static final FoodProperties HOT_DOG_WITH_SAUCE_AND_CHEESE = new FoodProperties.Builder().nutrition(7).saturationModifier(1.2F).build();
     public static final FoodProperties CHEESEBURGER = new FoodProperties.Builder().nutrition(5).saturationModifier(0.8F).build();
     public static final FoodProperties CHICKEN_N_CHEESEBURGER = new FoodProperties.Builder().nutrition(5).saturationModifier(0.8F).build();
+    //0.3.1: Extra Toppings!
+    public static final FoodProperties BACON_CHEESEBURGER = new FoodProperties.Builder().nutrition(6).saturationModifier(1.0F).build();
+    public static final FoodProperties SLICED_ONION = new FoodProperties.Builder().nutrition(1).saturationModifier(0.3F).fast().build();
+    public static final FoodProperties ONION_RINGS = new FoodProperties.Builder().nutrition(2).saturationModifier(0.6F).build();
+    public static final FoodProperties CHICKEN_BACON_CHEESEBURGER = new FoodProperties.Builder().nutrition(6).saturationModifier(1.0F).build();
 }

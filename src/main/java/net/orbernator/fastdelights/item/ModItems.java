@@ -1,7 +1,6 @@
 package net.orbernator.fastdelights.item;
 
 import net.minecraft.core.Registry;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -35,6 +34,12 @@ public class ModItems {
     public static final DeferredItem<Item> HOT_DOG_WITH_SAUCE_AND_CHEESE = ITEMS.register("hot_dog_with_sauce_and_cheese", () -> new Item(new Item.Properties().food(ModFoods.HOT_DOG_WITH_SAUCE_AND_CHEESE)));
     public static final DeferredItem<Item> CHEESEBURGER = ITEMS.register("cheeseburger", () -> new Item(new Item.Properties().food(ModFoods.CHEESEBURGER)));
     public static final DeferredItem<Item> CHICKEN_N_CHEESEBURGER = ITEMS.register("chicken_n_cheeseburger", () -> new Item(new Item.Properties().food(ModFoods.CHICKEN_N_CHEESEBURGER)));
+    //0.3.1: Extra Toppings!
+    public static final DeferredItem<Item> BACON_CHEESEBURGER = ITEMS.register("bacon_cheeseburger", () -> new Item(new Item.Properties().food(ModFoods.BACON_CHEESEBURGER)));
+    public static final DeferredItem<Item> SLICED_ONION = ITEMS.register("sliced_onion", () -> new Item(new Item.Properties().food(ModFoods.SLICED_ONION)));
+    public static final DeferredItem<Item> ONION_RINGS = ITEMS.register("onion_rings", () -> new Item(new Item.Properties().food(ModFoods.ONION_RINGS)));
+    public static final DeferredItem<Item> CHICKEN_BACON_CHEESEBURGER = ITEMS.register("chicken_bacon_cheeseburger", () -> new Item(new Item.Properties().food(ModFoods.CHICKEN_BACON_CHEESEBURGER)));
+
 
 
     // Liquids
