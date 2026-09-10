@@ -42,9 +42,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 Ingredient.of(CommonTags.Items.TOOLS_KNIFE),
                 ModItems.SLICED_PICKLES.get(),
                 2)
-                        .build(recipeOutput, FastDelights.MODID + ":cutting/sliced_pickles");
+                .build(recipeOutput, FastDelights.MODID + ":cutting/sliced_pickles");
 
-        
+        CuttingBoardRecipeBuilder.cuttingRecipe(
+                Ingredient.of(vectorwing.farmersdelight.common.registry.ModItems.ONION.get()),
+                Ingredient.of(CommonTags.Items.TOOLS_KNIFE),
+                ModItems.SLICED_ONION.get(),
+                2)
+                .build(recipeOutput, FastDelights.MODID + ":cutting/sliced_onion");
+
         CuttingBoardRecipeBuilder.cuttingRecipe(
                 Ingredient.of(Items.POTATO),
                 Ingredient.of(CommonTags.Items.TOOLS_KNIFE),
@@ -80,6 +86,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.HOT_DOG_WITH_SAUCE.get())
                 .requires(BnCItems.FLAXEN_CHEESE_WEDGE)
                 .unlockedBy("has hot_dog", has(ModItems.RAW_HOT_DOG.get()))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.BACON_CHEESEBURGER.get())
+                .requires(ModItems.CHEESEBURGER.get())
+                .requires(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
+                .unlockedBy("has bacon", has(vectorwing.farmersdelight.common.registry.ModItems.BACON.get()))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHICKEN_BACON_CHEESEBURGER.get())
+                .requires(ModItems.CHICKEN_N_CHEESEBURGER.get())
+                .requires(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
+                .unlockedBy("has bacon", has(vectorwing.farmersdelight.common.registry.ModItems.BACON.get()))
                 .save(recipeOutput);
 
         //Shaped Crafting
@@ -166,6 +184,29 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('C', BnCItems.FLAXEN_CHEESE_WEDGE)
                 .unlockedBy("has chicken_patty", has(ModItems.CHICKEN_PATTY.get())).save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.BACON_CHEESEBURGER.get(), 1)
+                .pattern("Bb ")
+                .pattern("ECP")
+                .pattern("  B")
+                .define('B', ModItems.BUN.get())
+                .define('b', vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
+                .define('P', ModItems.SLICED_PICKLES.get())
+                .define('E', vectorwing.farmersdelight.common.registry.ModItems.BEEF_PATTY.get())
+                .define('C', BnCItems.FLAXEN_CHEESE_WEDGE)
+                .unlockedBy("has beef", has(vectorwing.farmersdelight.common.registry.ModItems.BEEF_PATTY.get())).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, ModItems.CHICKEN_BACON_CHEESEBURGER.get(), 1)
+                .pattern("Bb ")
+                .pattern("ECP")
+                .pattern("  B")
+                .define('B', ModItems.BUN.get())
+                .define('b', vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
+                .define('P', ModItems.SLICED_PICKLES.get())
+                .define('E', ModItems.CHICKEN_PATTY.get())
+                .define('C', BnCItems.FLAXEN_CHEESE_WEDGE)
+                .unlockedBy("has chicken_patty", has(ModItems.CHICKEN_PATTY.get())).save(recipeOutput);
+
+
 
         //Cooking Pot
         CookingPotRecipeBuilder.cookingPotRecipe(ModItems.CHIPS.get(), 1, NORMAL_COOKING, MEDIUM_EXP, ModItems.CHIPHOLDER)
@@ -174,6 +215,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedByAnyIngredient(ModItems.SLICED_POTATOES.get(), ModItems.OIL_BUCKET.get())
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .save(recipeOutput, FastDelights.MODID + ":cooking/chips");
+
+        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.ONION_RINGS.get(), 1, NORMAL_COOKING, MEDIUM_EXP, ModItems.CHIPHOLDER)
+                .addIngredient(ModItems.SLICED_ONION.get())
+                .addIngredient(ModItems.OIL_BUCKET.get())
+                .unlockedByAnyIngredient(ModItems.SLICED_ONION.get(), ModItems.OIL_BUCKET.get())
+                .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
+                .save(recipeOutput, FastDelights.MODID + ":cooking/onion_rings");
 
         //Smoking
         SimpleCookingRecipeBuilder.smoking(
