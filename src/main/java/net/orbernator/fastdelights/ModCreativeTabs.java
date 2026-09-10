@@ -21,6 +21,8 @@ public class ModCreativeTabs {
 
     public static void displayItems(CreativeModeTab.ItemDisplayParameters displayParameters, CreativeModeTab.Output output) {
         output.accept(ModItems.SLICED_POTATOES.get());
+        output.accept(ModItems.SLICED_ONION.get());
+        output.accept(ModItems.ONION_RINGS.get());
         output.accept(ModItems.CHIPS.get());
         output.accept(ModItems.CHIPS_WITH_TOMATO_SAUCE.get());
         output.accept(ModItems.RAW_CHICKEN_PATTY.get());
@@ -30,6 +32,12 @@ public class ModCreativeTabs {
         output.accept(ModItems.COOKED_HOT_DOG.get());
         output.accept(ModItems.BUN.get());
         output.accept(ModItems.HOT_DOG.get());
+        output.accept(ModItems.HOT_DOG_WITH_SAUCE.get());
+        output.accept(ModItems.HOT_DOG_WITH_SAUCE_AND_CHEESE.get());
+        output.accept(ModItems.CHEESEBURGER.get());
+        output.accept(ModItems.CHICKEN_N_CHEESEBURGER.get());
+        output.accept(ModItems.BACON_CHEESEBURGER.get());
+        output.accept(ModItems.CHICKEN_BACON_CHEESEBURGER.get());
         output.accept(ModItems.OIL_BUCKET.get());
         output.accept(ModItems.CHIPHOLDER.get());
         output.accept(ModItems.COPPER_PULVERIZER.get());

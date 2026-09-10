@@ -27,5 +27,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.GOLD_PULVERIZER.get())
                 .add(ModItems.DIAMOND_PULVERIZER.get())
                 .add(ModItems.NETHERITE_PULVERIZER.get());
+
+        tag(ModTags.Items.BURGERS)
+                .add(ModItems.CHEESEBURGER.get())
+                .add(ModItems.BACON_CHEESEBURGER.get())
+                .add(ModItems.CHICKEN_N_CHEESEBURGER.get())
+                .add(ModItems.CHICKEN_BACON_CHEESEBURGER.get());
     }
 }

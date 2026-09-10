@@ -10,6 +10,7 @@ import net.orbernator.fastdelights.FastDelights;
 public class ModTags {
     public static class Items{
         public static final TagKey<Item> PULVERIZERS = createTag("pulverizers");
+        public static final TagKey<Item> BURGERS = createTag("burgers");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(FastDelights.MODID, name));
