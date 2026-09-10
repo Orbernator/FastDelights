@@ -92,13 +92,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.CHEESEBURGER.get())
                 .requires(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
                 .unlockedBy("has bacon", has(vectorwing.farmersdelight.common.registry.ModItems.BACON.get()))
-                .save(recipeOutput);
+                .save(recipeOutput, FastDelights.MODID + ":crafting/bacon_cheeseburger_from_cheeseburger");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHICKEN_BACON_CHEESEBURGER.get())
                 .requires(ModItems.CHICKEN_N_CHEESEBURGER.get())
                 .requires(vectorwing.farmersdelight.common.registry.ModItems.BACON.get())
                 .unlockedBy("has bacon", has(vectorwing.farmersdelight.common.registry.ModItems.BACON.get()))
-                .save(recipeOutput);
+                .save(recipeOutput, FastDelights.MODID + ":crafting/chicken_n_cheeseburger_from_cheeseburger");
 
         //Shaped Crafting
 

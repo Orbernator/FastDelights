@@ -1,25 +1,31 @@
 
-Installation information
+Fast Delights
 =======
+If you like this, consider donating! I work on this mod in my spare time, and donations tell me that people are getting use out of this!
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+[![Buy Me a Coffee](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/compact/donate/buymeacoffee-singular_46h.png "Buy Me a Coffee")](https://buymeacoffee.com/orbernator)
+[![Support me on Liberapay](https://img.shields.io/badge/Liberapay-F6C915?style=for-the-badge&logo=liberapay&logoColor=black "Support me on Liberapay")](https://liberapay.com/Orbernator/)
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+Fast Delights is a mod for 1.21.1 NeoForge Minecraft that adds foods that you might find in a fast food restaurant.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+[![modrinth](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg "Available on Modrinth")](https://modrinth.com/mod/fast-delights)
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+## Currently Implemented
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+### Main Meals
+
++ Chips
++ Cheeseburger
++ Chicken N Cheeseburger
++ Bacon Cheeseburger
++ Chicken Bacon Cheeseburger
++ Onion Rings
+
+### Other Items
+
++ Sliced Onion
++ Sliced Potato
++ Chipholder
++ Pulverisers
+
+
